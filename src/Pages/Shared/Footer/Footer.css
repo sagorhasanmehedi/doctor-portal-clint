@@ -1,0 +1,45 @@
+.fotter-text li {
+  list-style: none;
+  margin-bottom: 20px;
+  font-size: 15px;
+  font-weight: 600;
+  padding-bottom: 5px;
+  /* text-decoration: underline; */
+  transition: 0.3s;
+  color: gray;
+
+  font-family: "Nunito Sans", sans-serif;
+}
+.fotter-text li:hover {
+  text-decoration: none;
+  color: rgb(29, 0, 0);
+}
+.footer-heading {
+  font-size: 19px !important;
+  font-weight: 700 !important;
+  color: rgb(2, 165, 165) !important;
+  text-decoration: none !important;
+  margin-bottom: 40px !important;
+}
+.footerbutton {
+  padding: 10px 30px;
+  background-color: rgb(5, 185, 185);
+  color: white;
+  font-size: 16px;
+  border: 2px solid rgb(5, 185, 185);
+  margin-top: -23px !important;
+  transition: 0.5s;
+}
+.footerbutton:hover {
+  background: none;
+  color: rgb(5, 185, 185);
+}
+.footerison {
+  font-size: 40px !important;
+  color: rgb(5, 185, 185);
+  padding: 30px 20px 60px 0;
+  cursor: pointer;
+}
+#callnow {
+  text-decoration: none !important;
+}

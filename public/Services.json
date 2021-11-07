@@ -1,0 +1,22 @@
+[
+    {
+        "name":"Flurid Tretment",
+        "img":"https://i.ibb.co/K6NWcF8/cavity.png",
+        "dis":"To get started with React Router in a web app, you’ll need a React web app. If you need to create one, we recommend you try Create React App. It’s a popular tool that works really well with React Router."
+
+    },
+    {
+        "name":"Cavity Filing",
+        "img":"https://i.ibb.co/VgnHTQP/fluoride.png",
+        "dis":"To get started with React Router in a web app, you’ll need a React web app. If you need to create one, we recommend you try Create React App. It’s a popular tool that works really well with React Router."
+
+    },
+    {
+        "name":"Teate Whaitning",
+        "img":"https://i.ibb.co/DRHFrc1/whitening.png",
+        "dis":"To get started with React Router in a web app, you’ll need a React web app. If you need to create one, we recommend you try Create React App. It’s a popular tool that works really well with React Router."
+
+    }
+]
+
+
