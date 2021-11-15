@@ -130,7 +130,6 @@ const Usefirebase = () => {
       .then((res) => res.json())
       .then((data) => setadmin(data));
   }, [user.email]);
-  console.log(user);
 
   return {
     user,

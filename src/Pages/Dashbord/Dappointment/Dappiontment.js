@@ -8,6 +8,8 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
+import { Link, NavLink } from "react-router-dom";
+import { Button } from "@mui/material";
 
 function createData(name, calories, fat, carbs, protein) {
   return { name, calories, fat, carbs, protein };
@@ -44,7 +46,7 @@ const Dappiontment = ({ date }) => {
               <TableCell>Name</TableCell>
               <TableCell align="right">Date</TableCell>
               <TableCell align="right">Email</TableCell>
-              <TableCell align="right">Action</TableCell>
+              <TableCell align="right">Pay</TableCell>
             </TableRow>
           </TableHead>
           <TableBody>
@@ -58,7 +60,15 @@ const Dappiontment = ({ date }) => {
                 </TableCell>
                 <TableCell align="right">{row.date}</TableCell>
                 <TableCell align="right">{row.email}</TableCell>
-                <TableCell align="right">{row.carbs}</TableCell>
+                <TableCell align="right">
+                  {row.paymentinfo ? (
+                    "Payid"
+                  ) : (
+                    <NavLink to={`/dashbord/payment/${row._id}`}>
+                      <Button> Pay</Button>
+                    </NavLink>
+                  )}
+                </TableCell>
               </TableRow>
             ))}
           </TableBody>

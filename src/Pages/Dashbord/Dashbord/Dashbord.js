@@ -32,6 +32,7 @@ import Makeadmin from "../Makeadmin/Makeadmin";
 import Adddoctor from "../AddDoctor/Adddoctor";
 import Manageservices from "../ManageServices/Manageservices";
 import Useauth from "../../../Hook/Useauth";
+import Payment from "../Payment/Payment";
 
 const drawerWidth = 200;
 
@@ -173,6 +174,9 @@ function Dashbord(props) {
           </Route>
           <Route path={`${path}/makeadmin`}>
             <Makeadmin />
+          </Route>
+          <Route path={`${path}/payment/:id`}>
+            <Payment />
           </Route>
           <Route path={`${path}/manageservices`}>
             <Manageservices />

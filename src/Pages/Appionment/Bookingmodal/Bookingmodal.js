@@ -42,9 +42,10 @@ const Bookingmodal = ({ handleClose, open, booking, date, setcondition }) => {
   const handelsubmit = (e) => {
     const fulldata = { ...patientdata };
 
-    fulldata.tlme = booking.time;
+    fulldata.time = booking.time;
     fulldata.date = date.toLocaleDateString();
     fulldata.services = booking.name;
+    fulldata.price = booking.price;
 
     fetch("https://still-stream-94393.herokuapp.com/appointment", {
       method: "POST",

@@ -8,7 +8,6 @@ const Makeadmin = () => {
   const [email, setemail] = useState("");
   const [condition, setcondition] = useState(false);
   const { token } = Useauth();
-  console.log(token);
 
   const handelemail = (e) => {
     setemail(e.target.value);

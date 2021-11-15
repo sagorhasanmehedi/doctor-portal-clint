@@ -5,7 +5,6 @@ import Useauth from "../../Hook/Useauth";
 
 const Privateroute = ({ children, ...rest }) => {
   const { user, isloding } = Useauth();
-  console.log(user, isloding);
   if (isloding) {
     return <CircularProgress color="secondary" />;
   }

@@ -32,9 +32,9 @@ function App() {
             <Route path="/rgister">
               <Register />
             </Route>
-            <Privateroute path="/dashbord">
+            <Route path="/dashbord">
               <Dashbord />
-            </Privateroute>
+            </Route>
             <Route path="/ruf">
               <Ruf />
             </Route>

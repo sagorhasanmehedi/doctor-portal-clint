@@ -6,7 +6,7 @@ import { Box } from "@mui/system";
 import Bookingmodal from "../Bookingmodal/Bookingmodal";
 
 const Booking = ({ booking, date, setcondition }) => {
-  const { id, name, space, time } = booking;
+  const { price, name, space, time } = booking;
   const [open, setOpen] = React.useState(false);
   const handleOpen = () => setOpen(true);
   const handleClose = () => setOpen(false);
@@ -25,6 +25,10 @@ const Booking = ({ booking, date, setcondition }) => {
           </Typography>
           <Typography variant="h6" gutterBottom component="div">
             {time}
+          </Typography>
+
+          <Typography variant="body1" display="block" gutterBottom>
+            Price : ${price}
           </Typography>
           <Typography variant="caption" display="block" gutterBottom>
             {space} SPACES AVAILABLE

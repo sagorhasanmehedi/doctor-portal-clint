@@ -8,43 +8,48 @@ import Booking from "../Booking/Booking";
 
 const Appionmentbody = ({ date, setdate }) => {
   const [condition, setcondition] = useState(false);
-  console.log(condition);
   const bookings = [
     {
       id: 1,
       name: "Teeth Orthodonics",
       time: "08.00 AM - 09.00 AM",
       space: 10,
+      price: 200,
     },
     {
       id: 2,
       name: "Cosmetic Dentistry",
       time: "09.00 AM - 10.00 AM",
       space: 8,
+      price: 33,
     },
     {
       id: 3,
       name: "Teeth Cleaning",
       time: "10.00 AM - 11.00 AM",
       space: 9,
+      price: 45,
     },
     {
       id: 4,
       name: "Cavity Protection",
       time: "11.00 AM - 12.00 PM",
       space: 5,
+      price: 100,
     },
     {
       id: 5,
       name: "Pediatric Dental",
       time: "06.00 PM - 07.00 PM",
       space: 10,
+      price: 17,
     },
     {
       id: 6,
       name: "Oral Surgery",
       time: "07.00 PM - 08.00 PM",
       space: 10,
+      price: 20,
     },
   ];
 
@@ -66,7 +71,6 @@ const Appionmentbody = ({ date, setdate }) => {
             key={booking.id}
             date={date}
             booking={booking}
-            // date={date}
             setcondition={setcondition}
           ></Booking>
         ))}
